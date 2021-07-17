@@ -9,23 +9,15 @@ package br.com.hakkinendiniz.templateMethod;
  *
  * @author santo
  */
-public class Motor {
+public abstract class Motor {
     
-    protected void Oleo (){
-        System.out.println("Verificando oléo de motor");
-    };
+    protected abstract void Oleo ();;
     
-    protected void Combustivel (){
-         System.out.println("Verificando combustivel do motor");
-    };
+    protected abstract void Combustivel ();;
     
-    protected void Potencia (){
-         System.out.println("Carregando toda a potência do motor");
-    };
+    protected abstract void Potencia ();;
     
-    protected void Som (){
-         System.out.println("Processo de combustão resultando no som do motor");
-    };
+    protected abstract void Som ();;
     
     public final void ligar (){
         Oleo();
